@@ -10,6 +10,9 @@
 		6090C09D1DAD724A00CB849D /* LoginScreenViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6090C09C1DAD724A00CB849D /* LoginScreenViewTest.swift */; };
 		6090C0A41DAD72B600CB849D /* LoginScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6090C0A31DAD72B600CB849D /* LoginScreenViewController.swift */; };
 		6090C0A71DAD8B1800CB849D /* R.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6090C0A61DAD8B1800CB849D /* R.swift */; };
+		6097C2B01DAD9210006E9FA2 /* LoginProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6097C2AF1DAD9210006E9FA2 /* LoginProtocol.swift */; };
+		6097C2B21DAD93D4006E9FA2 /* UserLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6097C2B11DAD93D4006E9FA2 /* UserLogin.swift */; };
+		6097C2B61DAD9547006E9FA2 /* FakeUserLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6097C2B51DAD9547006E9FA2 /* FakeUserLogin.swift */; };
 		60C828A41DAC4C60001137AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C828A31DAC4C60001137AE /* AppDelegate.swift */; };
 		60C828A61DAC4C60001137AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C828A51DAC4C60001137AE /* ViewController.swift */; };
 		60C828A91DAC4C60001137AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60C828A71DAC4C60001137AE /* Main.storyboard */; };
@@ -36,6 +39,10 @@
 		6090C09C1DAD724A00CB849D /* LoginScreenViewTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreenViewTest.swift; sourceTree = "<group>"; };
 		6090C0A31DAD72B600CB849D /* LoginScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreenViewController.swift; sourceTree = "<group>"; };
 		6090C0A61DAD8B1800CB849D /* R.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.swift; sourceTree = "<group>"; };
+		6097C2AF1DAD9210006E9FA2 /* LoginProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginProtocol.swift; sourceTree = "<group>"; };
+		6097C2B11DAD93D4006E9FA2 /* UserLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLogin.swift; sourceTree = "<group>"; };
+		6097C2B51DAD9547006E9FA2 /* FakeUserLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeUserLogin.swift; sourceTree = "<group>"; };
+		6097C2B71DAD9644006E9FA2 /* YouTube.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = YouTube.entitlements; sourceTree = "<group>"; };
 		60C828A01DAC4C60001137AE /* YouTube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouTube.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60C828A31DAC4C60001137AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60C828A51DAC4C60001137AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +97,7 @@
 		6090C0A01DAD729500CB849D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6097C2B11DAD93D4006E9FA2 /* UserLogin.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -104,6 +112,7 @@
 		6090C0A21DAD729F00CB849D /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				6097C2AF1DAD9210006E9FA2 /* LoginProtocol.swift */,
 			);
 			name = Protocols;
 			sourceTree = "<group>";
@@ -114,6 +123,22 @@
 				6090C0A61DAD8B1800CB849D /* R.swift */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		6097C2B31DAD9536006E9FA2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6097C2B41DAD953E006E9FA2 /* New Group */,
+				6097C2B51DAD9547006E9FA2 /* FakeUserLogin.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		6097C2B41DAD953E006E9FA2 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
 			sourceTree = "<group>";
 		};
 		60C828971DAC4C60001137AE = {
@@ -139,6 +164,7 @@
 		60C828A21DAC4C60001137AE /* YouTube */ = {
 			isa = PBXGroup;
 			children = (
+				6097C2B71DAD9644006E9FA2 /* YouTube.entitlements */,
 				6090C0A51DAD8B0E00CB849D /* Resources */,
 				6090C0A21DAD729F00CB849D /* Protocols */,
 				6090C0A11DAD729900CB849D /* View Models */,
@@ -159,6 +185,7 @@
 		60C828BA1DAC4C61001137AE /* YouTubeTests */ = {
 			isa = PBXGroup;
 			children = (
+				6097C2B31DAD9536006E9FA2 /* Model */,
 				60C828BD1DAC4C61001137AE /* Info.plist */,
 				6090C09C1DAD724A00CB849D /* LoginScreenViewTest.swift */,
 			);
@@ -243,6 +270,11 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 2W3P634BS8;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					60C828B61DAC4C61001137AE = {
 						CreatedOnToolsVersion = 8.0;
@@ -392,7 +424,9 @@
 				60C828AC1DAC4C60001137AE /* YouTube.xcdatamodeld in Sources */,
 				60C828A61DAC4C60001137AE /* ViewController.swift in Sources */,
 				6090C0A41DAD72B600CB849D /* LoginScreenViewController.swift in Sources */,
+				6097C2B01DAD9210006E9FA2 /* LoginProtocol.swift in Sources */,
 				6090C0A71DAD8B1800CB849D /* R.swift in Sources */,
+				6097C2B21DAD93D4006E9FA2 /* UserLogin.swift in Sources */,
 				60C828A41DAC4C60001137AE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -402,6 +436,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6090C09D1DAD724A00CB849D /* LoginScreenViewTest.swift in Sources */,
+				6097C2B61DAD9547006E9FA2 /* FakeUserLogin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -534,6 +569,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = YouTube/YouTube.entitlements;
 				DEVELOPMENT_TEAM = 2W3P634BS8;
 				INFOPLIST_FILE = YouTube/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -549,6 +585,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = YouTube/YouTube.entitlements;
 				DEVELOPMENT_TEAM = 2W3P634BS8;
 				INFOPLIST_FILE = YouTube/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -30,15 +30,16 @@ class LoginScreenViewTest: QuickSpec {
         describe("what the view should contain"){
             context("When loaded"){
                 it("should have a button"){
-                    //Assert
                     expect(self.loginView.loginButton).toNot(beNil())
                 }
                 it("should have a field to enter text for username"){
-                    //Assert
                     expect(self.loginView.usernameField).toNot(beNil())
                 }
                 it("should have a field to enter text for password"){
                     expect(self.loginView.passwordField).toNot(beNil())
+                }
+                it("should have a LoginProtocol object which is used to handle login logic"){
+                    expect(self.loginView.login).toNot(beNil())
                 }
             }
         }
@@ -49,7 +50,13 @@ class LoginScreenViewTest: QuickSpec {
                 context("when the user enters a mismatching password"){}
             }
             context("when user is logging in for the first time"){
-                it("should save login information") {}
+                context("when the user tries to log in without entering a username"){}
+                context("when the uers tries to log in without a password"){}
+                it("should save login information") {
+                    //Arrange 
+                    //Act
+                    //Assert
+                }
             }
         }
     }

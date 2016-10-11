@@ -10,6 +10,7 @@ target 'YouTube' do
   pod 'Alamofire'
   pod 'Quick'
   pod 'Nimble'
+  pod 'KeychainSwift'
 
   target 'YouTubeTests' do
     inherit! :search_paths
