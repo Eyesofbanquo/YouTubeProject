@@ -7,17 +7,21 @@
 //
 
 import Foundation
+import KeychainSwift
 
 @testable import YouTube
 
-struct FakeUserLogin:LoginProtocol {
+class FakeUserLogin:LoginProtocol {
     var firstLogin:Bool
     var loginWasCalled:Bool
-    func login(information:LoginInformation) -> Bool {
-        if firstLogin == true {
+    init(){
+        self.firstLogin = false
+        self.loginWasCalled = false
+    }
+    func login(information:LoginInformation) -> Bool{
+        self.loginWasCalled = true
+        if information.username != "" && information.password != "" {
             return true
-        } else {
-            
         }
         return false
     }

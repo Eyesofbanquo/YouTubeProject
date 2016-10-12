@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>KeychainSwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Nimble.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,7 +42,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1730FE754C26F80396A4D6946F85AF4E</key>
+		<key>01D4772D488DB45CBEBB83D18805B226</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>32CD10563330D12198E0F484BA494A91</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -47,17 +57,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>4C698C648EE4D43C6B8BE0BE1FE91737</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>79C040AFDDCE1BCBF6D8B5EB0B85887F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A27115C20A247EBEF8AC8BC18CEECDDB</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>B9BBAFDF1D312000FA9F1DEFAA59BB46</key>
+		<key>EED6D89943EB6ABA563CCF16D27A5F6A</key>
 		<dict>
 			<key>primary</key>
 			<true/>

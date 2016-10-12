@@ -128,17 +128,9 @@
 		6097C2B31DAD9536006E9FA2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				6097C2B41DAD953E006E9FA2 /* New Group */,
 				6097C2B51DAD9547006E9FA2 /* FakeUserLogin.swift */,
 			);
 			name = Model;
-			sourceTree = "<group>";
-		};
-		6097C2B41DAD953E006E9FA2 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "New Group";
 			sourceTree = "<group>";
 		};
 		60C828971DAC4C60001137AE = {

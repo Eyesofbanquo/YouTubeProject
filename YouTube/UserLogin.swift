@@ -7,17 +7,26 @@
 //
 
 import Foundation
+import KeychainSwift
 
-struct UserLogin:LoginProtocol {
+
+class UserLogin:LoginProtocol {
+    let keychain:KeychainSwift = KeychainSwift()
     var firstLogin:Bool
-    func login(information:LoginInformation) -> Bool {
-        
-        if firstLogin == true {
-            
-            return true
-        } else {
-            
+    init(){
+        self.firstLogin = false
+    }
+    func login(information:LoginInformation) -> Bool{
+        if information.username != "" && information.password != "" {
+            //If the password is already stored then return true. If not already stored, then store the password then return true
+            if keychain.get(information.username) != nil {
+                return true
+            } else {
+                keychain.set(information.password, forKey: information.username)
+                return true
+            }
         }
+        
         return false
     }
 }

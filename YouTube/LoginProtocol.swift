@@ -11,6 +11,5 @@ import Foundation
 typealias LoginInformation = (username:String, password:String)
 
 protocol LoginProtocol {
-    var firstLogin:Bool { get set }
     func login(information:LoginInformation) -> Bool
 }
